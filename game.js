@@ -68,7 +68,7 @@ var render = function (dt) {
 };
 
 // keep track of the time between renders
-var lastRenderTime = performance.now();
+var lastRenderTime = Performance.now();
 
 var gameLoop = function () {
   var now = performance.now();
