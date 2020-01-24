@@ -98,17 +98,21 @@ function handleTouchMove(evt) {
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
         if ( xDiff > 0 ) {
         /* left swipe */ 
+	d = "LEFT";
         left.play();
         } else {
         /* right swipe */
+        d = "RIGHT";
         right.play();
         }                       
     } else {
         if ( yDiff > 0 ) {
         /* up swipe */ 
-		up.play();
+        d = "UP";
+	up.play();
         } else { 
         /* down swipe */
+        d = "DOWN";
         down.play();
         }                                                                 
     }
