@@ -1,14 +1,19 @@
 <html>
-    <head>
+    <head scroll="no" style="overflow: hidden">
         <title>Snake Game</title>
-        <center style="font-weight:bold">Mange le trứng.</center> 
+		 <center style="font-weight:bold">Mange le trứng.</center> 
+				
         <style>
+
             canvas{
+				overflow: hidden;
                 display: block;
                 margin: 0 auto;
             }
         </style>
     </head>
-    <canvas id="snake" width="608" height="608"></canvas>
+	<body scroll="no" style="overflow: hidden">
+		<canvas scroll="no" style="overflow: hidden" id="snake" width="608" height="608"></canvas>
+	</body>
     <script src="snake.js"></script>
 </html>
